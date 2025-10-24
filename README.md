@@ -1,6 +1,3 @@
-Here's a README file tailored for your Product Inventory project, based on the screenshot you provided and the "Study Hub" structure you liked.
-
-Just copy and paste the text below into a README.md file in your project's root directory.
 
 Product Inventory: A MERN Stack Application
 Product Inventory is a full-stack MERN (MongoDB, Express, React, Node.js) application designed for managing a product database. It provides a secure, easy-to-use interface where authenticated users can add, view, search, filter, edit, and delete inventory items.
