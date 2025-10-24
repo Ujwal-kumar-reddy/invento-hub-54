@@ -139,7 +139,7 @@ JWT_SECRET=yourrandomsecretkey
   npm run dev
 
 
-  The React app will open automatically in your browser, likely at http://localhost:5173.
+  The React app will open automatically in your browser, likely at http://localhost:8080.
 
 You now have the full MERN application running locally!
 
@@ -159,7 +159,7 @@ DELETE,/api/products/:id,(Protected) Delete a product by its ID
 
 * Live Application: https://invento-hub-54.vercel.app
 
-Note: When deploying, you must update the API base URL in your frontend code (e.g., in an axios instance) to point to your live backend URL, not http://localhost:5000. You also need to configure CORS on your backend to allow requests from your live frontend URL.
+Note: When deploying, you must update the API base URL in your frontend code (e.g., in an axios instance) to point to your live backend URL, not http://localhost:8080. You also need to configure CORS on your backend to allow requests from your live frontend URL.
 
 
 👤 Author
