@@ -35,7 +35,9 @@ User Authentication: (Inferred) Users must log in to access the inventory, indic
 Responsive Design: A professional, clean UI that works on all screen sizes.
 
 📸 Screenshots
-(You should add your own screenshots here! You've already got a great one of the main dashboard. You might also want to add one of your "Add Product" or "Edit Product" modal/form.)
+  <img width="1831" height="864" alt="Screenshot 2025-10-24 204527" src="https://github.com/user-attachments/assets/6a1bdc36-f35f-4c5a-9f32-5a61d1d95ae1" />
+  
+
 
 
 🛠 Tech Stack
@@ -88,9 +90,8 @@ Git: To clone the repository.
 
 Clone the Repository (if you haven't)
 
-git clone [https://your-repo-link.com/product-inventory.git](https://your-repo-link.com/product-inventory.git)
-cd product-inventory
-
+git clone https://github.com/Ujwal-kumar-reddy/invento-hub-54.git
+cd invento-hub-54
 
 2. Navigate to the Backend Folder
  cd product-inventory-api
@@ -156,7 +157,7 @@ DELETE,/api/products/:id,(Protected) Delete a product by its ID
 🚢 Deployment
 (Add links to your live, deployed application here.)
 
-* **Live Application:**https://invento-hub-54.vercel.app/
+* Live Application: https://invento-hub-54.vercel.app
 
 Note: When deploying, you must update the API base URL in your frontend code (e.g., in an axios instance) to point to your live backend URL, not http://localhost:5000. You also need to configure CORS on your backend to allow requests from your live frontend URL.
 
@@ -164,9 +165,9 @@ Note: When deploying, you must update the API base URL in your frontend code (e.
 👤 Author
 (Ujwal Kumar Reddy/ GitHub Username)
 
-GitHub: [Link to your GitHub profile]
+GitHub: https://github.com/Ujwal-kumar-reddy
 
-LinkedIn: [Link to your LinkedIn profile]
+
 
 
 📄 License
