@@ -1,171 +1,115 @@
+Product Inventory is a full-stack web application designed for managing products efficiently.
+It provides a modern, easy-to-use interface where authenticated users can add, view, search, filter, edit, and delete products in an inventory system — all in real time.
 
-Product Inventory: A MERN Stack Application
-Product Inventory is a full-stack MERN (MongoDB, Express, React, Node.js) application designed for managing a product database. It provides a secure, easy-to-use interface where authenticated users can add, view, search, filter, edit, and delete inventory items.
+This project demonstrates how to build a complete full-stack app using React, Vite, and Supabase, showcasing the integration of a cloud backend with a responsive, modern frontend.
 
-This project was built from scratch to demonstrate key MERN stack concepts, including:
+⚙️ Core Concepts Demonstrated
 
-Building a complete RESTful API with Express & Mongoose.
+Building a dynamic frontend using React + Vite
 
-Creating a dynamic, multi-page frontend with React and React Router.
+Managing state and UI interactions with React Hooks
 
-Handling complex state management with React hooks (e.g., for search and filters).
+Using Supabase as the backend for authentication and database operations
 
-Implementing secure user authentication (implied by "Logout" feature).
+Handling CRUD (Create, Read, Update, Delete) functionality for product records
 
-Implementing full CRUD (Create, Read, Update, Delete) functionality for products.
+Implementing search and category-based filtering
+
+Securing user sessions through Supabase Auth
+
+Deploying a production-ready project using Vercel
 
 ✨ Key Features
-View Products: See a "card" view of all available products with their image, name, price, and stock.
 
-Add Products: A dedicated form (likely a modal or new page) to add new items to the inventory.
+View Products: Display all products as elegant cards showing name, image, price, stock, and category
 
-Edit Products: Update the details of any existing product.
+Add Product: Add new products directly from the UI through a dedicated form
 
-Delete Products: Securely remove products from the inventory.
+Edit Product: Update existing product details quickly
 
-Filter by Category: Quickly filter the product list by categories like "Clothing," "Electronics," etc.
+Delete Product: Remove products securely from the database
 
-Search Products: A live search bar to find products by name or other attributes.
+Search & Filter: Instantly search or filter products by category (e.g., Clothing, Electronics)
 
-User Authentication: (Inferred) Users must log in to access the inventory, indicated by the "Logout" button.
+User Authentication: Only logged-in users can access the dashboard (enabled by Supabase Auth)
 
-Responsive Design: A professional, clean UI that works on all screen sizes.
+Responsive Design: Works perfectly across devices with a clean, professional interface built using Tailwind CSS
 
-📸 Screenshots
-  <img width="1831" height="864" alt="Screenshot 2025-10-24 204527" src="https://github.com/user-attachments/assets/6a1bdc36-f35f-4c5a-9f32-5a61d1d95ae1" />
-  
+📸 Screenshot
+<img width="1828" height="885" alt="Screenshot 2025-10-25 114658" src="https://github.com/user-attachments/assets/c19327a6-16e2-41f4-ae64-3b60c79daf80" />
 
 
-
-🛠 Tech Stack
-Backend
-Node.js: JavaScript runtime environment
-
-Express.js: Web framework for Node.js
-
-PostgreSQL: SQL (Relational) database
-
-pg (node-postgres): PostgreSQL client for Node.js (Or add your ORM like Sequelize or Prisma)
-
-bcryptjs: For hashing user passwords
-
-jsonwebtoken (JWT): For user authentication tokens
-
-dotenv: For managing environment variables
-
-cors: For enabling Cross-Origin Resource Sharing
-
-
+🧰 Tech Stack
 Frontend
-React.js: JavaScript library for building user interfaces
 
-Vite: Next-generation frontend tooling (bundler and dev server)
+React.js – Component-based UI library
 
-React Router (react-router-dom): For client-side routing
+Vite – Fast build tool and dev server
 
-Axios: Promise-based HTTP client for making API requests
+Tailwind CSS – Utility-first CSS framework for styling
 
-CSS / Styled-Components / Tailwind: (Add whichever you used for styling)
+TypeScript – Ensures cleaner, type-safe code
 
+Fetch API – For connecting to Supabase APIs
 
+Backend
 
+Supabase – Provides a managed PostgreSQL database, authentication, and real-time APIs
 
-🚀 Getting Started: Local Setup
-Follow these instructions to get a copy of the project running on your local machine for development and testing.
+.env configuration – Securely stores database keys and credentials
 
-Prerequisites
-Node.js & npm: Download & Install Node.js
+💡 Why I Used Supabase
 
-MongoDB Atlas Account: A free MongoDB Atlas account to host your database.
+I chose Supabase because it provides all backend features I needed without writing custom Node.js or Express code.
+It offers:
 
-Git: To clone the repository.
+A ready PostgreSQL database
 
+Built-in authentication
 
+Automatic API endpoints
 
-1. Backend Setup (product-inventory-api)
-(Adjust folder names like product-inventory-api if yours are different, e.g., backend)
+Real-time synchronization
 
-Clone the Repository (if you haven't)
+This allowed me to focus on the frontend functionality and design while still having a robust, scalable backend.
 
+🚀 Getting Started
+1. Clone the Repository
 git clone https://github.com/Ujwal-kumar-reddy/invento-hub-54.git
 cd invento-hub-54
 
-2. Navigate to the Backend Folder
- cd product-inventory-api
+2. Install Dependencies
+npm install
 
- 3.npm install
+3. Configure Environment Variables
 
- 4.Database Setup
+Create a .env file in the root directory and add your Supabase credentials:
 
-Create a new PostgreSQL database for this project (e.g., inventory_db).
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
 
-If you have SQL script files for creating tables (e.g., schema.sql), run them now against your new database.
-
- 5.Create .env File Create a file named .env in the product-inventory-api root folder. Add your database connection details and JWT secret.
-
-# Example PostgreSQL Connection URL
-DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<database_name>
-
-# Or, if using individual variables (check your db config file)
-# DB_USER=your_user
-# DB_PASSWORD=your_password
-# DB_HOST=localhost
-# DB_PORT=5432
-# DB_NAME=inventory_db
-
-PORT=5000
-JWT_SECRET=yourrandomsecretkey
-
-5.Run the Backend Server
-  npm run dev
+4. Run the Development Server
+npm run dev
 
 
-2.Frontend Setup (product-inventory-client)
-(Adjust folder names like product-inventory-client if yours are different, e.g., frontend)
+Your app will open at http://localhost:5173
+.
 
-1.Open a New Terminal Keep your backend server running in the first terminal.
+🌐 Deployment
 
-2.Navigate to the Frontend Folder From the root product-inventory directory:
-  cd product-inventory-client
+The project is deployed using Vercel, which hosts the React frontend and connects it to the Supabase backend.
 
+Live App:  https://invento-hub-54.vercel.app
 
-3.Install Dependencies
-  npm install
-
-4. Run the Frontend App
-  npm run dev
-
-
-  The React app will open automatically in your browser, likely at http://localhost:8080.
-
-You now have the full MERN application running locally!
-
-🌐 API Endpoints
-The backend provides the following RESTful API endpoints:
-Method,Endpoint,Description
-POST,/api/auth/register,Register a new user
-POST,/api/auth/login,Log in an existing user
-GET,/api/products,Get all products (can incl. search/filter queries)
-POST,/api/products,(Protected) Create a new product
-GET,/api/products/:id,Get a single product by its ID
-PUT,/api/products/:id,(Protected) Update a product by its ID
-DELETE,/api/products/:id,(Protected) Delete a product by its ID
-
-🚢 Deployment
-(Add links to your live, deployed application here.)
-
-* Live Application: https://invento-hub-54.vercel.app
-
-Note: When deploying, you must update the API base URL in your frontend code (e.g., in an axios instance) to point to your live backend URL, not http://localhost:8080. You also need to configure CORS on your backend to allow requests from your live frontend URL.
-
-
+📡 Supabase Database Tables
+Table	Description
+products	Stores product details like name, price, category, image URL, stock
+users	Handles authenticated user information
 👤 Author
-(Ujwal Kumar Reddy/ GitHub Username)
 
-GitHub: https://github.com/Ujwal-kumar-reddy
-
-
-
+Ujwal Kumar Reddy
+GitHub:  https://github.com/Ujwal-kumar-reddy
 
 📄 License
-This project is licensed under the MIT License.
+
+This project is licensed under the MIT License — you’re free to use and modify it.
