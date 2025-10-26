@@ -112,4 +112,4 @@ GitHub:  https://github.com/Ujwal-kumar-reddy
 
 📄 License
 
-This project is licensed under the MIT License — you’re free to use and modify it.
+This project is licensed under the MIT License .
